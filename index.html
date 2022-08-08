@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <title>Login e Senha</title>
+</head>
+
+<body>
+    <h1>Bem vindo!</h1>
+
+    <script>
+        var cadastreLogin = prompt('Cadastre seu login')
+        var cadastreSenha = prompt('Cadastre sua senha')
+
+        var loginCadastrado = cadastreLogin
+        var senhaCadastrada = cadastreSenha
+
+        var loginInformado = prompt('Informe seu login')
+        var senhaInformada = prompt('Informe sua senha')
+
+        if (
+            loginCadastrado == loginInformado &&
+            senhaCadastrada == senhaInformada
+        ) {
+            alert('Bem-vindo ao sistema ' + loginInformado)
+        } else {
+            alert(
+                'Login inválido. Tente novamente' +
+                loginInformado +
+                ' ' +
+                senhaInformada
+            )
+        }
+    </script>
+</body>
+
+</html>
