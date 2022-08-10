@@ -8,8 +8,6 @@
 </head>
 
 <body>
-    <h1>Bem vindo!</h1>
-
     <script>
         var cadastreLogin = prompt('Cadastre seu login')
         var cadastreSenha = prompt('Cadastre sua senha')
@@ -17,21 +15,35 @@
         var loginCadastrado = cadastreLogin
         var senhaCadastrada = cadastreSenha
 
-        var loginInformado = prompt('Informe seu login')
-        var senhaInformada = prompt('Informe sua senha')
+        maximoTentativas = 3
+        numeroTentativas = 1
 
-        if (
-            loginCadastrado == loginInformado &&
-            senhaCadastrada == senhaInformada
-        ) {
-            alert('Bem-vindo ao sistema ' + loginInformado)
-        } else {
-            alert(
-                'Login inválido. Tente novamente' +
-                loginInformado +
-                ' ' +
-                senhaInformada
-            )
+        while (numeroTentativas <= maximoTentativas) {
+            var loginInformado = prompt('Informe seu login')
+            var senhainformada = prompt('Informe sua senha')
+
+            if (
+                loginCadastrado == loginInformado &&
+                senhaCadastrada == senhainformada
+            ) {
+                alert('Bem-vindo ao sistema ' + ' ' + loginInformado)
+                document.write(' <h1>Olá jovem!</h1>')
+                document.write(
+                    '<h3>Se voce chegou até aqui lhe agradeço. <p>Quero aproveitar e reinterar meus agradecimentos a Alura e a Oracle pela oportunidade. <p> Com base nas aulas fiz um código de login, deu pra perceber, né ? kkk, breve teremos mais, MUITO MAIS!!</h3>'
+                )
+
+                maximoTentativas = numeroTentativas
+            } else {
+                if (numeroTentativas == 3)
+                    alert(
+                        'ACESSO BLOQUEDO!! VOCE EXCEDEU O NUMERO DE TENTATIVAS!! Cadastre novos login e senha'
+                    )
+                else {
+                    alert('Login inválido. Tente novamente')
+                }
+            }
+
+            numeroTentativas = numeroTentativas + 1
         }
     </script>
 </body>
