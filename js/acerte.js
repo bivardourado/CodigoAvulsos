@@ -16,4 +16,8 @@ button.onclick = verificado
 document.write(
     '<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br'
 )
+<<<<<<< HEAD
 document.write('<footer>Meu portifolio - Versão 0.002</footer>')
+=======
+document.write('<footer>Meu portifolio - Versão 0.0002</footer>')
+>>>>>>> e439fd6cb2095978d0b22248f9a4cc959e903fcb
