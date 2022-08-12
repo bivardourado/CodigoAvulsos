@@ -8,59 +8,25 @@
 </head>
 
 <body>
-    <style>
-        body {
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
-    <script>
-        var cadastreLogin = prompt('Cadastre seu login')
-        var cadastreSenha = prompt('Cadastre sua senha')
+    <!DOCTYPE html>
+    <html lang="en">
 
-        var loginCadastrado = cadastreLogin
-        var senhaCadastrada = cadastreSenha
+    <head>
+        <meta charset="UTF-8" />
 
-        maximoTentativas = 3
-        numeroTentativas = 1
+        <title>Portifolio</title>
+    </head>
 
-        while (numeroTentativas <= maximoTentativas) {
-            var loginInformado = prompt('Informe seu login')
-            var senhainformada = prompt('Informe sua senha')
+    <body>
+        <script src="/js/script.js"></script>
+        <h1>
+            <a href="/acerte.html">Clique que tem mais</a>
+        </h1>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <footer>Meu portifolio - Versão 0.002</footer>
+    </body>
 
-            if (
-                loginCadastrado == loginInformado &&
-                senhaCadastrada == senhainformada
-            ) {
-                alert('Bem-vindo ao sistema ' + ' ' + loginInformado)
-                document.write(' <h1>Olá jovem!</h1>')
-                document.write(
-                    '<h3>Se voce chegou até aqui lhe agradeço. <p align=”Justify”>Quero aproveitar e reinterar meus agradecimentos a <a href="https://www.alura.com.br">Alura </a> e a <a href="https://www.oracle.com">Oracle</a> pela oportunidade de participar do fantástico curso  One Next Education. <p align=”Justify”> Com base nas aulas fiz um código de login, deu pra perceber, né ? kkk. Em breve teremos mais, MUITO MAIS!! </h3>'
-                )
-                document.write(
-                    '<h5> Voce gostou? Gostou mesmo? <p> Prove! Envia um pix pra mim, kkk , o pix é bivardourado@gmail.com. Vai aparecer o nome Jailde , que é minha esposa.</h5>'
-                )
-                document.write('Vamos continuar?')
-                maximoTentativas = numeroTentativas
-            } else {
-                if (numeroTentativas == 3)
-                    alert(
-                        'ACESSO BLOQUEDO!! VOCE EXCEDEU O NUMERO DE TENTATIVAS!! Cadastre novos login e senha'
-                    )
-                else {
-                    alert('Login inválido. Tente novamente')
-                }
-            }
-
-            numeroTentativas = numeroTentativas + 1
-            document.write('<br><br> ')
-        }
-    </script>
-    <h1>
-        <a href="https://bivardourado.github.io/acerte/">Clique que tem mais</a>
-    </h1>
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <footer>Meu portifolio - Versão 0.002</footer>
+    </html>
 </body>
 
 </html>

@@ -8,38 +8,32 @@
 
     <title>Document</title>
 </head>
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+</head>
 
 <body>
     <h3>
         Legal que voce chegou aqui. Eu sei que a página tá feia, não repare, estou praticando lógica, kkk.
         <p>Aproveita e tire um tempinho para um ciclo de POMODORO.</p>
-        <p>Vamos no velho e bom joguinho de acertar o numero esse tá fácil, é</p>
+        <p>
+            Vamos no velho e bom joguinho de acertar o numero esse tá fácil, é
+        </p>
         <p>de 0 a 10.</p>
     </h3>
 
     <input />
-    <button>Digite um numero</button>
-    <script>
-        var segredo = Math.round(Math.random() * 10)
-        var input = document.querySelector('input')
-
-        function verificado() {
-            if (input.value == segredo) {
-                alert('Acertou, muito bem!')
-            } else {
-                alert(' Xiii voce ERROU, KKKK! vai tentando até acertar, kkk')
-            }
-            input.value = ' '
-            input.focus()
-        }
-
-        var button = document.querySelector('button')
-        button.onclick = verificado
-        document.write(
-            '<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br'
-        )
-        document.write('<footer>Meu portifolio - Versão 0.002</footer>')
-    </script>
+    <button>Digite um Numero</button>
+    <script src="/js/acerte.js"></script>
 </body>
+
+</html>
 
 </html>
