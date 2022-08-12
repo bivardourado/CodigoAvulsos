@@ -1,7 +1,16 @@
 body {
     background: write;
     text-align: center;
-    width: 80%;
-    padding: 20px;
-    margin: 20px;
+    margin: 0;
+    height: 100%;
+}
+
+footer {
+    display: auto;
+    background-color: blue;
+    color: rgb(248, 242, 242);
+    width: 100%;
+    text-align: center;
+    line-height: 98px;
+    font: size 30px;
 }
